@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    *::selection
+    {
+        background-color: yellow;
+    }
+
+}
+html
+{
+/*  font-size: 10px;  */
+ /* 10px-----(100/16)*10 =62.5 */
+ font-size: 62.5%;
+
+}
+body
+{
+    font-family: 'Montserrat',sans-serif;
+}
+ul li
+{
+    list-style: none;
+}
+a
+{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+    p, li 
+    {
+        /* 1.6 ka matlab hai 16px    */
+        font-size: 1.6rem;
+        /*0.5 matlab hai 8px */
+        margin-bottom: 0.5em;
+    }
+h1,h2,h3
+{
+    margin-bottom: 0.5em;
+    font-weight: 700px;
+}
+
+.header
+ {
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),url('../img/back.jpg');
+animation-name: change-bg-color;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+background-size:1280px;
+background-repeat: no-repeat;
+position: relative;
+
+ }
+ @keyframes change-bg-color
+{
+     from
+     {
+        background-image: url(../img/7ankii.jpg);
+     }
+     to 
+     {
+        background-image: url(../img/back2.jpg);
+     }
+    }
+
+ 
+ h1
+ {
+    color: white;
+    font-weight: 400;
+ }
+.navbar
+ {
+    padding-right: 22rem;
+    padding-left: 4rem;
+    padding-top: 1rem;
+ }
+ .header.navbar a
+ {
+    color: white;
+ }
+ .navbar .logo
+ {
+    float: left;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: black
+ }
+ .navbar .nav-items 
+ {
+    float: right;
+    margin-top: 1rem;
+    padding-right: 10px;
+ }
+ .navbar .nav-item
+ {
+    display: inline-block;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 71px;
+    font-size: 2rem;
+    
+ }
+ .navbar .nav-item a.bol
+ {
+   color: aqua;
+ }
+
+
+ 
+  /*########### utility classes ############*/
+  .container
+  {
+    max-width:1200px;
+    width:90%;
+    margin: 0 auto;
+
+  }
+  .lg-heading
+  {
+    font-size: 3.5rem;
+   
+  }
+  .md-heading
+  {
+
+  }
+  .text-color
+  {
+
+  }
+  .navbar a:link,
+  .navbar a:visited
+  {
+    color: hotpink;
+}
+
+.navbar a:hover
+{
+    background-color: black;
+    color: aqua;
+}
+
+  .navbar ::after
+ {
+    content:"";
+    display: block;
+    clear: both;
+ }
+ /* ############### header content styling ############*/
+ .header-content h1
+ {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: chartreuse;
+    
+ }
+ .header-content p
+ {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: bold;
+
+ }
+ .btn
+{
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em,0;
+    padding: 0.5em,1.5em;
+    background-color: aqua;
+    color: red;
+    font-size: 25px;
+}
+.header-content
+{
+   position: absolute;
+   top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.20),rgba(0,0,0,0.20));
+}
+.ak2
+{
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 3rem;
+    color: chartreuse;
+    text-shadow: 5px 5px 30px 8px blue;
+}
+video.content-video
+{
+   width: 300px;
+   position: absolute;
+   top:15%;
+   text-shadow: 5px 5px 30px 8px blue;
+}
+/*################ section ########*/
+
+section
+{
+   background-color: rgb(43, 177, 226);
+
+   height: 60vh;
+}
+.cir img
+{
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   margin-left: 100px ;
+   margin-top: 50px;
+   box-shadow: 2px 2px 5px 10px orange;
+background-size:1280px;
+background-repeat: no-repeat;
+}
+
+    
+.cir:hover
+{
+    background-color: black;
+    color: aqua;
+}
+.pick:hover
+{
+    width: 50px;
+}
+.footer
+{
+    background: fuchsia;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-link i
+{
+    margin :3rem;
+    color: blue;
+}
+.footer h2
+{
+   color: greenyellow;
+   font-size: 29px;
+}
+/*about section designing*/
+
+nav.bg-dark
+{
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+}
+
+.top .around 
+{
+    font-size: 50px;
+    background-color:blue;
+    font-weight: 700;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+background: url('../img/back.jpg');
+background-size:1280px;
+background-repeat: no-repeat;
+}
+.top .around h1
+{
+    font-size: 50px;
+    font-weight: 700;
+   color: lime;
+   margin-top: 75px;
+    
+}
+span
+{
+    font-size: 100px;
+}
+section.setimg
+{
+    
+}
+.setimg
+{
+  background-color: aliceblue;  
+}
+.setimg .bor1
+{
+    
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: azure;
+}
+.setimg .bor1 p
+{
+    background-color: white;
+    font-size: 40px;
+    font-weight: 700;
+    color: blue;
+}
+.container
+{
+    border: 2px solid red;
+    margin-top: 30px;
+    background-color:black;
+    
+
+}
+.box
+{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 10px red;
+    padding-top: 36px;
+    padding-left: 44px;
+    padding-right: 33px;
+    padding-bottom: 50px; 
+}
+.container h2
+{
+    font-size: 30px;
+    color: chartreuse;
+}
+.box p
+{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    overflow: hidden;
+    color: red;
+}
+#bts
+{
+    background-color: teal;
+    border-radius: 5px;
+    color: #f4f4f4;
+    float: right;
+    padding: 10px 15px;
+    margin: 0px;
+}
+
+#bts:hover
+{
+    background-color: black;
+    box-shadow: 0 10px 10px rgba(red, green, blue, alpha);
+}
+.container1
+{
+    margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../img/ankii12.jpg');
+}
+.box1
+{
+    background-color: #f4f4f4;
+    box-shadow: 0 15px 10px greenyellow;
+    padding-top: 36px;
+    padding-left: 44px;
+    padding-right: 33px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.box1 img
+{
+    max-width: 50%;
+    margin-left: 30%;
+    margin-top: 55px;
+    margin-bottom:80px;
+    border-radius: 5px 5px 0,0; 
+    box-shadow: 2px 2px 10px 5px palegreen;
+}
+.box1 h2
+{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+}
+.box1 p
+{
+    font-size: 16px;
+    padding-left: 44px;
+    padding-right: 33px;
+    overflow: hidden;
+    font-weight: 500px;
+    color: white;
+}
+#bts1
+{
+    background-color: teal;
+    padding: 7px 13px;
+    margin: 13px;
+    border-radius: 7px;
+    float: right;
+    color: #f4f4f4;
+}
+#bts1:hover
+{
+    background-color: black;
+    box-shadow: 0 5px 5px rgb(red, green, blue,0.2);
+}
+h2 span.high
+{
+    color: springgreen;
+    font-size: 80px;
+}
+p span
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: fuchsia;
+}
+.visible-content1 .smart1
+{
+    color:magenta;
+    font-weight: 700;
+}
+.box3
+{
+
+    background-image: linear-gradient(#380036,#0CBABA);
+    box-shadow: 0 15px 10px greenyellow;
+    padding-top: 36px;
+    padding-left: 44px;
+    padding-right: 33px;
+    padding-bottom: 50px;
+
+animation-name: phange-bg-color;
+    animation-duration: 30s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+background-size:1280px;
+background-repeat: no-repeat;
+}
+@keyframes phange-bg-color
+{
+     from
+     {
+        background-image: url(../img/ak90.jpg);
+     }
+     to 
+     {
+        background-image: url(../img/back.jpg);
+     }
+    }
+
+.box3 h2
+{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+    margin-top: 100px;
+    box-shadow: 0 5px 5px rgb(red, green, blue,0.2);
+}
+
+.box3 .rik
+{
+    color: aqua;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 400px;
+    margin-top: 5px;
+}
+.form1
+{
+    background-image: linear-gradient(#380036,#0CBABA);
+}
+input
+{
+    width: 150px;
+    height: 30px;
+    color: mediumblue;
+}
+button
+{
+    width: 150px;
+    height: 50px;
+    color: blue;
+    background-color: palegreen;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover
+{
+    background-color: red;
+}
+
+
+

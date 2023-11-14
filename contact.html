@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website welcome </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/319b8611ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="">
+           <h1 class="logo lg_heading">@Travel Digitiali</h1>
+            <ul class="nav-items">
+             <li class="nav-item"><a href="./index.html">Home</a></li>
+             <li class="nav-item"><a href="./about.html">About</a></li>
+             <li class="nav-item"><a href="./contact.html">Contact</a></li>
+         </ul>
+        </div>
+     </nav>
+     <!--      regstration form-->
+     <aside>
+        <div class="form1"> 
+            <div class="box3">
+                <h2>Travel Reservation Form</h2>
+            <div class="form3"> 
+                <form action="web12.php" method="post" enctype="multipart/form-data">
+                <div class="rik"><label for="name">Enter your full name</label>
+                <input type="text" id="name" placeholder="Enter your first name" required name="Full">
+                <input type="text" id="name" placeholder="Enter your last name" required name="Full"></div>
+                <br>
+                <br>
+                <div class="rik"><label for="Email-id">Enter your Email-id</label>
+                <input type="alphanumeric" id="Email-id" required placeholder="enter email adrress" name="email"></div>
+                <br>
+                <br>
+                <div class="rik"><label for="Date">Date of Birthday</label>
+                <input type="date" name="date" placeholder="Date of Birthday" required></div>
+                <br>
+                <br>
+                <div class="rik"><label for="phone">Enter your Mobile number</label>
+                <select name="choice">
+                    <option value="" >Choice</option>
+                    <option value="">+1</option>
+                    <option value="" selected>+91</option>
+                    <option value="">+5</option>
+                </select>
+                <input type="number" id="phone" placeholder="enter Mobile number" required name="Mobile"></div>
+                <br>
+                <br>
+                <div class="rik"><label for="gen">Gender:        </label>
+                <label for="gen">Male</label>
+                <input type="radio" name="gender" id="gen">
+                <label for="fem">Female</label>
+                <input type="radio" Name="gender"id="fem">
+                <label for="tran">Transative</label>
+                <input type="radio" name="gender" id="tran"></div>
+                <br>
+                <br>
+                <div class="rik"><label for="sel">Select your package</Select></label>
+                <select>
+                    <option id="sel" selected>Select package</option>
+                    <option id="sel" >Taj Mahal</option>
+                    <option id="sel" >Agra Fort</option>
+                    <option id="sel" >Red Fort, Delhi</option>
+                    <option id="sel" >Qutub Minar, Delhi</option>
+                    <option id="sel" >Fatehpur Sikri, Uttar Pradesh</option>
+                    <option id="sel" >Hawa Mahal, Jaipur</option>
+                    <option id="sel" >Victoria Memorial</option>
+                    <option id="sel" >Humayun’s Tomb, Delhi</option>
+                    <option id="sel" >Khajuraho Temples, Madhya Pradesh</option>
+                </select></div>
+                <br>
+                <br>
+               <dib class="rik"><label for="arriv">Arrival Date <Select></Select></label>
+                <input type="date" id="arriv" required name="date"></dib>
+                <br>
+                <br>
+               <div class="rik"><label for="gh">enter Full Address</label>
+                 <textarea name="detalis" id="gh" cols="20" rows="3" placeholder="detalis"
+                  required></textarea></div>
+                  <br>
+                  <br>
+                 <div class="rik"><label for="image">Upload your Id-proof Document</label>
+                <input type="file" name="image" id="image"required></div>
+                <br>
+                <br>
+                <div class="rik"><label for="cho">How many total person</label>
+                <input type="number" id="cho" placeholder="number of person"></div>
+                <br>
+                <br>
+               <div class="rik"><label for="complelet">do you all fill of agree with you this form</label>
+                 <input type="checkbox" name="complelet" required></div>
+                 <br>
+                 <br>
+                 <br>
+               <div class="rik" >
+                 <button type="submit">Final sumbit</button>
+                 <button type="button">preview</button>
+                 <button type="Reset">Get Started</button>
+                </div>
+
+                </form>
+            </div>
+            </div>
+            </div>
+
+        </div>
+     </aside>
+     <footer class="footer">
+        <div class="social-media-link">
+            <i class="fab fa-facebook fa-5x"></i>
+            <i class="fab fa-twitter fa-5x"></i>
+            <i class="fab fa-instagram fa-5x"></i>
+            <h2>Digitiali Indian Travel &copy; 2023 All Right Reserved</h2>
+          </div>
+        </footer>
+     
+     
+</body>
+</html>
